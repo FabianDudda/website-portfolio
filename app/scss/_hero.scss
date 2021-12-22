@@ -1,0 +1,103 @@
+#section-hero {
+
+  //ROW 1
+  .row:nth-of-type(1) {
+    height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    // border: 1px solid green;
+
+    // IMAGE-CONTAINER
+    .img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // border: 1px solid green;
+
+      img {
+        height: 600px;
+        width: auto;
+        padding-left: 200px;
+        // border: 1px solid red;
+      }
+    }
+
+    // TEXT-CONTAINER
+    .right-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;     
+      align-items: flex-end; 
+      justify-content: center;
+      // border: 1px solid purple; 
+
+      // ROW 1 -> TEXT -> H1
+      h1 {
+        transition: all 275ms ease-in-out;
+        margin-top: 0;
+        margin-bottom: 1rem;
+
+        font-size: $font-xxl;
+        font-weight: 700;
+            
+        line-height: 1;
+        // border: 1px solid blue;
+
+        .hi {
+          color: $orange;
+          font-size: 11.6rem;
+        }
+      }
+
+      // ROW 1 -> TEXT -> P
+      p {  
+        float: right;
+        width: 25.5rem;
+        font-size: 1.2rem;
+        text-align: left;
+        line-height: 1.5;
+        transition: all 275ms ease-in-out;
+        // border: 1px solid blue;
+      }
+    }
+  }
+
+  //ROW 2
+  .row:nth-of-type(2) {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    // border: 1px solid yellow;
+
+    a > svg {
+      width: 30px;
+      height: 30px;
+      // border: 1px solid blue;
+    }
+  }
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

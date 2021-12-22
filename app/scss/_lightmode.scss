@@ -1,0 +1,52 @@
+// ====== DARK / LIGHT MODE ====== //
+
+.dark-mode {
+  background-image: url(http://fabiandudda.de/portfolio/img/bg-white-a245.png);
+  
+  h1, h2, p, a, span  {
+    color: $black;
+  }
+
+  #light-mode-font {
+    color: $black;
+  }
+
+  .logo-container {
+
+    img {
+      display: none;
+    }
+    background-image: url(/img/logo-black.svg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 46px;
+  }
+
+  .light-mode-btn {
+        
+    img {
+      background-color: $orange;
+    }
+  }
+
+  #section-contact {
+
+    .row:nth-of-type(1) {
+      height: 85vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //border: 1px solid green;
+
+      // IMAGE (LEFT)
+      .col-6 {
+
+        input, textarea, #submit {
+          color: $black;
+        }
+
+        
+      }
+    }
+  }
+}

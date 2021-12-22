@@ -1,0 +1,76 @@
+// ====== SLIDE IN TOP ====== //
+#slide-in-top {
+    position: relative;
+    top: -600px;    
+    animation: slide-in-top 1.4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-top { 
+    0%      { opacity: 0;         }
+    50%     { opacity: 0;         }
+    100%    { opacity: 1; top: 0; } 
+}
+
+// ====== SLIDE IN BOTTOM ====== //
+#slide-in-bottom {
+    position: relative;
+    bottom: -450px;  
+    animation: slide-in-bottom 1.4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-bottom { 
+    0%      { opacity: 0;            }
+    50%     { opacity: 0;            }
+    100%    { opacity: 1; bottom: 0; }  
+}
+
+// ====== SLIDE IN LEFT ====== //
+#slide-in-left {
+    position: relative;
+    left: -500px;    
+    animation: slide-in-left 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-left { 
+    0% { opacity: 0;}
+    100% { left: 0; opacity: 1; } 
+}
+
+// ====== SLIDE IN RIGHT ====== //
+#slide-in-right {
+    position: relative;
+    right: -500px;  
+    animation: slide-in-right 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-right { 
+    0% { opacity: 0;}
+    100% { right: 0; opacity: 1; } 
+}
+
+// ====== FADE IN ====== //
+
+#fade-in-1 {
+    position: relative; 
+    animation: fade-in 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1.25s;
+    opacity: 0;
+}
+
+#fade-in-2 {
+    position: relative; 
+    animation: fade-in 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+
+@keyframes fade-in { 
+    0%      { opacity: 0; }
+    100%    { opacity: 1; } 
+}

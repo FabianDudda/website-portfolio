@@ -1,0 +1,29 @@
+// Breakpoints
+@media (max-width: 87em) {  // Wenn Bildschirm größer als 1400px, wird das Standard Design angezeigt
+
+}
+
+// 640px, 1024px, 1400px
+$breakpoints-up: (  "medium": "31.875rem",  // 499px
+                    "large":  "64.0625rem", // 1023px
+                    "xlarge": "87.0625rem"  // 1399px
+);
+
+// 639px, 1023px, 1399px
+$breakpoints-down: ( 
+                     "handy":  "31.25rem",  // 500px            // Wenn Bildschirm kleiner als 500px, wird das Handy Design angezeigt
+                     "tablet": "64rem",     // 1024px           // Wenn Bildschirm kleiner als 1024px, wird das Tablet Design angezeigt
+                     "laptop":  "87rem"     // 1400px           // Wenn Bildschirm kleiner als 1400px, wird das Standard Design angezeigt
+);
+
+@mixin breakpoint-up($size){
+    @media (min-width: map-get($breakpoints-up , $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size){
+    @media (max-width: map-get($breakpoints-down , $size)) {
+        @content;
+    }
+}

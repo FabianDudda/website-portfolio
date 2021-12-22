@@ -1,0 +1,40 @@
+#section-impressum {
+
+    .row:nth-of-type(1) {
+        width: 70%;
+        padding-left: 75px;
+        padding-right: 50px;
+
+        h1 {
+            font-size: $font-xl;
+            color: $orange;
+            padding-top: 175px;
+            padding-bottom: 25px;
+        }
+
+        h2 {
+            font-size: $font-m;
+        }
+
+        p {
+            font-size: $font-s;
+        }
+    }
+
+    // FOOTER ROW
+    .row:nth-of-type(2) {
+        height: 3vh;
+
+        p {
+            font-size: $font-xs;
+            text-align: center;
+            //border: 1px solid red;
+        }
+
+        a {
+            color: $orange;
+            text-decoration: none;
+        }
+
+    }
+}

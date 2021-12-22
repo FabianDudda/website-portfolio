@@ -1,0 +1,250 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Segoe UI', 'Helvetica', sans-serif;
+  font-size: $font-m;
+
+  color: $white;
+
+  background-color: $black;
+  background-image: url(http://fabiandudda.de/portfolio/img/bg-black-a245.png);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+
+
+// ====== HELPER CLASS ====== //
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+// ====== FONTS ====== //
+.font-orange {
+  color: $orange;
+}
+
+.font-light-blue {
+  color: $light-blue;
+}
+
+.font-blue {
+  color: $blue;
+}
+
+.font-white {
+  color: $white;
+}
+
+.btn-1 {
+  margin-top: 20px;
+  margin-right: 232px;
+  width: 175px;
+  height: 40px;
+  border: 2px solid $orange;
+  background-color: transparent;
+  font-size: 14px;
+  color: $white;
+  transition: all 275ms ease-in-out;
+  //border: 2px solid blue;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $orange;
+  }
+
+  &:nth-of-type(1) {
+    margin-left: 35px;
+    border-color: $orange;
+  }
+}
+
+// ====== BUTTONS ====== //
+
+.nav-btn {
+
+  .hover {
+    transition: all 1ms ease-in-out;
+    position: relative;
+
+      &:before, &:after {
+        content: "";
+        position: absolute;
+        bottom: -0.625rem;
+        width: 0;
+        height: 2px;
+        margin: 0.3125rem 0 0;
+        transition: all 1ms ease-in-out;
+        transition-duration: 0.5s;
+        opacity: 0;
+        background-color: $orange;
+      }
+
+      &.hover-1 {
+
+        &:before { left: 50%;  }
+        &:after  { right: 50%; }
+      }
+    }
+
+    &:hover { 
+      cursor: pointer;
+
+      .hover {
+              
+      &:before, &:after {
+        width: 100%;
+        opacity: 1;
+        }
+
+        &.hover-1 {
+
+        &:before, &:after {
+          width: 50%;
+        } 
+      }
+    }
+  }
+}
+
+.explore-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+
+  //border: 1px solid red;
+
+  a > svg {
+    height: 30px;
+    width: auto;
+    margin-top: 130px;
+    
+    &:hover {
+      position: relative; 
+      animation: bounce 1.75s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(15px); }
+      100% { transform: translateY(0); }
+    }
+  }
+}
+
+/* ====== ICONS ====== */
+
+.skill-icons {
+  width: 15px;
+  height: 15px;
+}
+
+
+/* ====== GRID SYSTEM ====== */
+
+.container {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row::after {         // Clearfix-Hack damit die rows nicht durcheinander floaten
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*='col-'] {     // Styling for columns
+  float: left;
+  min-height: 1px;
+  padding: 0;  
+  margin: 0;                                                                 
+}
+
+.col-1 { width: 16.666%; }
+.col-2 { width: 33.333%; }
+.col-3 { width: 50%;     }
+.col-4 { width: 66.666%; }
+.col-6 { width: 100%;    }
+
+@include breakpoint-down(laptop) {
+  .col-1 { width: 33.333%; }
+}
+
+@include breakpoint-down(tablet) {
+
+  .col-1 { width: 50%;  }
+  .col-2 { width: 100%; }
+  .col-3 { width: 100%; }
+  .col-4 { width: 100%; }
+}
+
+@include breakpoint-down(handy) {
+
+  .col-1 { width: 100%; }
+  .col-2 { width: 100%; }
+  .col-3 { width: 100%; }
+  .col-4 { width: 100%; }
+}
+
+/* ====== SICHTBARKEIT: GRIDSYSTEM ====== */
+/*
+.border, .border * {
+  border: 1px solid palevioletred;
+}
+
+[class*='col-'] {
+  background-color: lightblue;
+}
+
+p {
+  background-color: palegoldenrod;
+  padding: 0;
+  margin: 0;
+  color: black;
+  text-align: center;
+}
+*/
+
+
+/* ====== SCROLL SECTIONS ====== */
+
+.content {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-destination: 0 0;
+  scroll-snap-type: y mandatory;
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+
+  section {
+    padding-top: 7rem;
+    color: $white;
+  
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+}

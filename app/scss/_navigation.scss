@@ -1,0 +1,80 @@
+#top-nav {
+    position: fixed;
+    background-color: transparent;
+    width: 98.9%;
+    //border: 1px solid greenyellow;
+
+
+    .col-6 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        //border: 1px solid wheat;
+    }
+
+    a > .logo-container {
+        width: 60px;
+        height: 60px;
+        //border: 1px solid wheat;
+
+        img {
+            width: 60px;
+            height: 60px;
+            //border: 1px solid wheat;
+        }
+    }
+
+    .light-mode-btn {
+        cursor: pointer;
+        position: absolute;
+        top: -18%;
+        left: 48.6%;
+        background-color: transparent;
+        border: none;
+        //border: 1px solid orange;
+
+
+       
+        img {
+            height: 50px;
+            width: auto;
+            opacity: 0.7;
+            //border: 1px solid yellow;
+
+            &:hover {
+                position: relative; 
+                animation: bounce 1.75s ease-in-out infinite;
+            }
+        }
+    }
+
+    ul > li {
+        display: inline-block;
+        padding: 0rem 2.2rem 0.7rem 1.5rem;
+
+        //border: 1px solid blue;
+
+        &:last-of-type {
+            padding: 0rem 0.4rem 0.7rem 1.5rem;
+        }
+    }
+
+    ul > li > a {
+        position: relative;
+        font-size: 1.1875rem;
+        font-weight: 300;
+        color: $white;
+        text-decoration: none;
+        transition: color 275ms ease-in-out;
+
+        &:hover {
+
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+

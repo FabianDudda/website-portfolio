@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TODO: Implement Font -->
+
+    <link rel="stylesheet" href="app/scss/style.css">
+
+    <title>FABIAN DUDDA</title>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+	<nav id="top-nav">
+            
+        <div class="container">
+            <div class="row">
+                <div id="fade-in-1" class="col-6">
+
+                    <a href="#section-hero">
+                        <div class="logo-container">
+                             <img type="svg" src="img/logo-white.svg" alt="Logo">        
+                        </div>
+                    </a>
+            
+                    <button class="light-mode-btn" onclick="myFunction()"><img src="img/light-mode.svg" type="svg" alt="Light mode"></button>
+
+                    <ul>
+                        <li class="nav-btn"><a id="light-mode-font" class="hover hover-1" href="#section-hero">Home</a></li>
+                        <li class="nav-btn"><a id="light-mode-font" class="hover hover-1" href="#section-work-01">Work</a></li>
+                        <li class="nav-btn"><a id="light-mode-font" class="hover hover-1" href="#section-about">About</a></li>
+                        <li class="nav-btn"><a id="light-mode-font" class="hover hover-1" href="#section-contact">Contact</a></li>
+                    </ul>
+            
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- HERO SECTION -->
+        <section id="section-hero">
+            <div class="container">
+
+                <!-- MAIN ROW -->
+                <div class="row">
+
+                    <!-- LEFT CONTAINER -->
+                    <div class="col-3 img-container">
+                        <img id="slide-in-bottom" type="svg" src="img/character-85.svg" alt="Logo">  
+                    </div>
+
+                    <!-- RIGHT CONTAINER -->
+                    <div class="col-3 right-container">
+
+                        <div id="slide-in-top">
+                            <h1><span class="hi">Hi,</span>i'm Fabian!</h1>
+                            <p>
+                                I'm currently studying <span class="font-orange">media informatics</span> at the 
+                                <span class="font-orange">WHS</span> in Gelsenkirchen. I love to create and develop websites, 
+                                games and other stuff.
+                            </p>                        
+                        </div>
+
+                        <div id="fade-in-1" class="btn-container">
+                            <a href="#section-work-01"><button id="light-mode-font" class="btn-1">See my work</button></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BOTTOM ROW -->
+                <div class="row">
+                    <div id="fade-in-2" class="col-6 explore-container">
+                        <a href="#section-work-01">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 120 100" width="120" height="100"><defs><path d="M111.7 5.06L60.09 5.06L8.48 5.06L34.28 48.05L60.09 91.05L85.9 48.05L111.7 5.06Z" id="e4kJKwdwa"></path></defs><g><g><g><use xlink:href="#e4kJKwdwa" opacity="1" fill="#fdad0d" fill-opacity="1"></use><g><use xlink:href="#e4kJKwdwa" opacity="1" fill-opacity="0" stroke="#fdad0d" stroke-width="8" stroke-opacity="1"></use></g></g></g></g></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- WORK_01: TEXT LEFT + IMAGE RIGHT -->
+        <section id="section-work-01">
+            <div class="container border">
+                
+                <!-- MAIN ROW -->
+                <div class="row">
+
+                    <!-- TEXT (LEFT) -->
+                    <div class="col-3">
+                        <h1>Easybank</h1>
+                        <h2>Next generation digital banking.</h2>
+                        <div id="fade-in-1" class="btn-container">
+                            <a href="./projects/easybank/index.html" target="_blank">
+                                <button id="light-mode-font" class="btn-1 live-demo">Live Demo</button>
+                            </a>
+                        </div>
+                        <div>
+                            <span>Build with:</span>
+                            <img class="skill-icons" src="img/icons/html5.png" alt="HTML 5">
+                            <img class="skill-icons" src="img/icons/css3.png" alt="CSS 3">
+                            <img class="skill-icons" src="img/icons/javascript.png" alt="JavaScript">
+                        </div>
+
+                    </div>
+
+                    <!-- IMAGE (RIGHT) -->
+                    <div class="col-3">
+                        <a href="./projects/easybank/index.html" target="_blank">
+                            <img src="img/projects/Easybank-Desktop.svg" type="svg" alt="Easybank Preview">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- BOTTOM ROW -->
+                <div class="row">
+                    <div id="fade-in-2" class="col-6 explore-container">
+                        <a href="#section-work-02">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 120 100" width="120" height="100"><defs><path d="M111.7 5.06L60.09 5.06L8.48 5.06L34.28 48.05L60.09 91.05L85.9 48.05L111.7 5.06Z" id="e4kJKwdwa"></path></defs><g><g><g><use xlink:href="#e4kJKwdwa" opacity="1" fill="#fdad0d" fill-opacity="1"></use><g><use xlink:href="#e4kJKwdwa" opacity="1" fill-opacity="0" stroke="#fdad0d" stroke-width="8" stroke-opacity="1"></use></g></g></g></g></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- WORK_02: IMAGE LEFT + TEXT RIGHT -->
+        <section id="section-work-02">
+            <div class="container border">
+
+                <!-- MAIN ROW -->
+                <div class="row">
+
+                    <!-- IMAGE (LEFT) -->
+                    <div class="col-3">
+                        <a href="./projects/webdesign-madesimple/index.html" target="_blank">
+                            <img src="img/projects/webdesign-ms-desktop.svg" type="svg" alt="Webdesign made simple Preview">
+                        </a>
+                    </div>
+
+                    <!-- TEXT (RIGHT) -->
+                    <div class="col-3">
+                        <h1>Design Agency</h1>
+                        <h2>Webdesign made simple.</h2>
+                        <div id="fade-in-1" class="btn-container">
+                            <a href="./projects/webdesign-madesimple/index.html" target="_blank">
+                                <button id="light-mode-font" class="btn-1 live-demo">Live Demo</button>
+                            </a>
+                        </div>
+                        <div>
+                            <span>Build with:</span>
+                            <img class="skill-icons" src="img/icons/html5.png" alt="HTML 5">
+                            <img class="skill-icons" src="img/icons/css3.png" alt="CSS 3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOTTOM ROW -->
+                <div class="row">
+                    <div id="fade-in-2" class="col-6 explore-container">
+                        <a href="#section-work-03">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 120 100" width="120" height="100"><defs><path d="M111.7 5.06L60.09 5.06L8.48 5.06L34.28 48.05L60.09 91.05L85.9 48.05L111.7 5.06Z" id="e4kJKwdwa"></path></defs><g><g><g><use xlink:href="#e4kJKwdwa" opacity="1" fill="#fdad0d" fill-opacity="1"></use><g><use xlink:href="#e4kJKwdwa" opacity="1" fill-opacity="0" stroke="#fdad0d" stroke-width="8" stroke-opacity="1"></use></g></g></g></g></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- WORK_03: TEXT LEFT + IMAGE RIGHT -->
+        <section id="section-work-03">
+            <div class="container border">
+
+                <!-- MAIN ROW -->
+                <div class="row">
+
+                    <!-- TEXT (LEFT) -->
+                    <div class="col-3">
+                        <h1>Coming soon</h1>
+                    <!-- 
+                        <h2>...</h2>
+                    
+                        <div id="fade-in-1" class="btn-container">
+                            <button id="light-mode-font" class="btn-1 live-demo">Live Demo</button>
+                        </div>
+                        <div>
+                            <span>Build with:</span>
+                            <img class="skill-icons" src="img/icons/html5.png" alt="HTML 5">
+                            <img class="skill-icons" src="img/icons/css3.png" alt="CSS 3">
+                            <img class="skill-icons" src="img/icons/javascript.png" alt="JavaScript">
+                        </div>
+                    -->
+
+                    </div>
+
+                    <!-- IMAGE (RIGHT) -->
+                    <div class="col-3">
+                       <a href="#">
+                            <img src="img/projects/comingsoon.png" type="svg" alt="Easybank Preview">
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- BOTTOM ROW -->
+                <div class="row">
+                    <div id="fade-in-2" class="col-6 explore-container">
+                        <a href="#section-about">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 120 100" width="120" height="100"><defs><path d="M111.7 5.06L60.09 5.06L8.48 5.06L34.28 48.05L60.09 91.05L85.9 48.05L111.7 5.06Z" id="e4kJKwdwa"></path></defs><g><g><g><use xlink:href="#e4kJKwdwa" opacity="1" fill="#fdad0d" fill-opacity="1"></use><g><use xlink:href="#e4kJKwdwa" opacity="1" fill-opacity="0" stroke="#fdad0d" stroke-width="8" stroke-opacity="1"></use></g></g></g></g></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>  
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section id="section-about">
+            <div class="container border">
+
+                <!-- MAIN ROW -->
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/profil-1.png" alt="">
+                    </div>
+                    <div class="col-3">
+                        <div class="about-me-txt">
+                            <h1>About <span class="font-white">me</span></h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                                </p>
+                                <p>
+                                Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.
+                                </p>
+                                <p>
+                                Consetetur sadipscing elitr, lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor.
+
+                                </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOTTOM ROW -->
+                <div class="row">
+                    <div id="fade-in-2" class="col-6 explore-container">
+                        <a href="#section-contact">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 120 100" width="120" height="100"><defs><path d="M111.7 5.06L60.09 5.06L8.48 5.06L34.28 48.05L60.09 91.05L85.9 48.05L111.7 5.06Z" id="e4kJKwdwa"></path></defs><g><g><g><use xlink:href="#e4kJKwdwa" opacity="1" fill="#fdad0d" fill-opacity="1"></use><g><use xlink:href="#e4kJKwdwa" opacity="1" fill-opacity="0" stroke="#fdad0d" stroke-width="8" stroke-opacity="1"></use></g></g></g></g></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACT + FOOTER SECTION -->
+        <section id="section-contact">
+            <div class="container border">
+
+                <div class="row">
+                    <div class="col-6">
+
+                        <h1>Contact <span class="font-white">me</span></h1>
+                       
+                        <form id="form" action="https://formsubmit.co/22d02d7beb9a4fa765ecccd216a61777" method="POST">
+                            <input    id="name"     type="text"     name="name" placeholder="NAME">
+                            <input    id="email"    type="text"     name="mail" placeholder="E-MAIL">
+                            <textarea id="message"  type="text"     name="msg"  placeholder="MESSAGE"></textarea>
+                            <input    id="submit"   type="submit"   value="Send">
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                    <p>&copy Code & Design by Fabian Dudda (2021) - <a href="impressum.html">Impressum</a></p> 
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- JAVA SCRIPT -->
+    <script src="app/js/script.js"></script>
+
+
+</body>
+
+</html>
